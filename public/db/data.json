@@ -1,0 +1,31 @@
+{
+  "reviews": [
+    {
+      "author_name": "Marion LAPEYRE",
+      "profile_photo_url": "",
+      "rating": 5,
+      "relative_time_description": "Il y a 6 jours",
+      "text": "des produits sains, un accueil sympathique, des salades à composer goûteuses.",
+      "time": 1617786157,
+      "language": "fr"
+    },
+    {
+      "author_name": "plisson dimitri",
+      "profile_photo_url": "",
+      "rating": 5,
+      "relative_time_description": "Il y a une semaine",
+      "text": "Super concept, j'y ai déjà mangé plusieurs fois et les produits sont frais, bon et top pour la santé. Prix très raisonnables. Je recommande",
+      "time": 1615099757,
+      "language": "fr"
+    },
+    {
+      "author_name": "Manon Marquard",
+      "profile_photo_url": "",
+      "rating": 5,
+      "relative_time_description": "Il y a une semaine",
+      "text": "Un Super concept de type 'cantine sportive' , qui propose des produits sains ! Présenté sous forme de buffet avec plusieurs choix de produits. Nous avons le choix avec des bols de plusieurs taille. Pour les petites ou les grandes faims !Les prix sont très corrects et les quantités sont raisonnables. Les quiches maison sont vraiment excellentes ! On a eu droit à un super accueil. Merci Vincent !Bref, c'est une très bonne adresse pour le déjeuner ! Nous reviendrons !",
+      "time": 1609301357,
+      "language": "fr"
+    }
+  ]
+}
