@@ -1,6 +1,6 @@
 <template>
     <v-container id="section-concept" class="d-flex flex-column align-center text-center elevation-8" fluid>
-        <h3 class="text-h2 my-8 text-primary">Notre concept</h3>
+        <h3 class="text-h2 my-8 text-primary">CONCEPT</h3>
         <p class="text-h6 my-8 px-12">
             Sain. Toutes nos préparations sont réalisées à partir de produits bruts. Les viandes, les poissons et les
             légumes

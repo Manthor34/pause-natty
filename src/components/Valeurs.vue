@@ -1,6 +1,6 @@
 <template>
     <v-container id="section-valeurs" class="d-flex flex-column align-center text-center" fluid>
-        <h3 class="text-h2 my-8 text-primary">Nos valeurs</h3>
+        <h3 class="text-h2 my-8 text-primary">VALEURS</h3>
         <p class="text-h6 my-8 px-12">
             Natty est un terme anglais qui signifie “naturel” et “élégant”, et qui désigne dans le domaine sportif les
             athlètes
