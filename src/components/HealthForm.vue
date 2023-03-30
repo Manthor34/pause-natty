@@ -3,21 +3,21 @@
 <v-container class=" d-flex flex-column align-center ">
     <v-form class="form mt-8">
         <v-select 
-            color="blue"
+            color="primary"
             v-model="genre"
             ref="genre"
             label="Sexe"
             item-title="title"
             item-value="value"
             :items="[
-            {value: 'default', title: 'Homme'}, 
+            {value: 'male', title: 'Homme'}, 
             {value: 'female', title: 'Femme'}]"
             variant="underlined"
             required
         ></v-select>
 
         <v-text-field 
-            color="blue"
+            color="primary"
             v-model="age"
             label="Age :" 
             ref="age"
@@ -27,7 +27,7 @@
             required
         ></v-text-field>
         <v-text-field 
-            color="blue"
+            color="primary"
             v-model="taille"
             ref="taille"
             label="Poids :" 
@@ -37,7 +37,7 @@
             required
             ></v-text-field>
         <v-text-field 
-            color="blue"
+            color="primary"
             v-model="poids"
             ref="poids"
             label="Taille :" 
@@ -48,7 +48,7 @@
             ></v-text-field>
 
         <v-select 
-            color="blue"
+            color="primary"
             v-model="coeff"
             ref="coeff"
             label="Activité"
@@ -68,7 +68,7 @@
         </v-select>
 
         <v-select
-        color="blue"
+        color="primary"
         v-model="metabolisme"
         label="Métabolisme"
         item-title="title"
@@ -80,11 +80,14 @@
         variant="underlined"
         ></v-select>
 
-        <v-btn @click="handleSubmit(); handleChange()" color="blue">
+        <v-btn @click="handleSubmit(); handleChange()" color="primary">
             Calculer
         </v-btn>
 
-        <h2 class="mt-6" v-if="submitted">Vous avez besoin de {{ result }} calories</h2>
+        <h2 class="mt-6" v-if="submitted">{{ result }} ! C’est le nombre de calories que brûle votre corps quotidiennement. Si vous souhaitez perdre de la graisse il vous faudra en consommer un petit peu moins, et si vous souhaitez vous muscler il vous faudra en consommer un peu plus. 
+
+Un processus simple à comprendre mais compliqué à mettre en œuvre dans la vie de tous les jours. Contactez-nous ici (lien vers la page contact) pour que l’on vous accompagne.
+</h2>
 
     </v-form>
 </v-container>
@@ -123,11 +126,13 @@ export default {
             this.$refs.poids.validate()){
                 if (this.genre == "female") {
                     this.result = Math.round(665.1 + (9.56 * this.poids) + (1.85 * this.taille) - (4.67 * this.age) * this.coeff)
-                } else if (this.genre == "default") {
+                } else if (this.genre == "male") {
                     this.result = Math.round(66.5 + (13.75 * this.poids) + (5 * this.taille) - (6.77 * this.age) * this.coeff)
                 }
                 console.log(this.result)
-                this.submitted = true
+                if (this.result != null) {
+                    this.submitted = true
+                }
             }
         },
         handleChange() {
@@ -143,7 +148,7 @@ export default {
 
 <style>
 .form{
-    width: 900px;
+    width: 80%;
 }
 
 </style>

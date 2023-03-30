@@ -1,8 +1,7 @@
 <template>
-  <footer>
+  <footer class="bg-secondary">
 
     <div class="footer-menu">
-      <router-link :to="{ name: 'Home' }">Accueil</router-link>
       <router-link :to="{ name: 'Menu' }">Menu</router-link>
       <router-link :to="{ name: 'Contact' }">Contact</router-link>
       <router-link :to="{ name: 'CGV' }">CGV</router-link>
@@ -10,9 +9,7 @@
     </div>
     <div class="footer-separator"></div>
     <div class="footer-links">
-      <a href="https://www.youtube.com/channel/moncompteyoutube"><img src="../assets/youtube.png" alt="Youtube"></a>
-      <a href="https://www.instagram.com/moncompteinstagram/"><img src="../assets/instagram.png" alt="Instagram"></a>
-      <a href="https://www.facebook.com/moncomptefacebook/"><img src="../assets/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/pausenatty/"><v-icon icon="mdi-instagram"></v-icon></a>
     </div>
   </footer>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <nav class="elevation-12">
+    <nav class="elevation-12 d-none d-md-flex">
         <img src="../assets/logo-pause-natty.webp" alt="">
         <a href="#section-concept">Notre concept</a>
         <a href="#section-valeurs">Nos valeurs</a>
@@ -19,7 +19,7 @@ nav {
     justify-content: center;
     gap: 10%;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
 }
@@ -28,7 +28,7 @@ nav a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 30px;
     margin-right: 20px;
     padding: 5px 10px;
     transition: all 0.2s ease-in-out;
@@ -37,7 +37,6 @@ nav a {
 nav a:hover {
     color: #000;
     font-weight: bold;
-    background-color: white;
     padding: 5px 10px;
     border-radius: 10px;
 }

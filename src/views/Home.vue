@@ -32,6 +32,10 @@
             <HealthForm />
         </div>
 
+        <div class="bloc-footer">
+            <Footer />
+        </div>
+
     </div>
 </template>
 
@@ -44,6 +48,7 @@ import AvisGoogle from '@/components/AvisGoogle.vue'
 import Valeurs from '@/components/Valeurs.vue'
 import HealthForm from '@/components/HealthForm.vue'
 import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 
 
 
@@ -51,7 +56,7 @@ import getPostInsta from '@/composables/GetPostInsta'
 import getAvisGoogle from '@/composables/GetAvis'
 
 export default {
-    components: { NavBar, Concept, PostInsta, AvisGoogle, Valeurs, HealthForm, Header },
+    components: { NavBar, Concept, PostInsta, AvisGoogle, Valeurs, HealthForm, Header, Footer },
     setup(props) {
         const { post: postInsta, error: errorPostInsta, load: loadPostInsta } = getPostInsta('pausenatty') // l'id du compte insta à afficher
         const { post: avisGoogle, error: errorAvisGoogle, load: loadAvisGoogle } = getAvisGoogle()
@@ -64,23 +69,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .main-page {
     display: flex;
     flex-direction: column;
     /* gap: 50px; */
-}
-
-.main-page div {
-
-        /* background: gainsboro;
-        border-radius: 10px; */
-
-}
-
-.bloc-header {
-    /* position: relative;
-    height: 400px; */
 }
 
 .background-image {

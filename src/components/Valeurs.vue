@@ -1,12 +1,12 @@
 <template>
-    <div id="section-valeurs">
-        <h3>Nos valeurs</h3>
-        <p>
+    <v-container id="section-valeurs" class="d-flex flex-column align-center text-center" fluid>
+        <h3 class="text-h2 my-8 text-primary">Nos valeurs</h3>
+        <p class="text-h6 my-8 px-12">
             Natty est un terme anglais qui signifie “naturel” et “élégant”, et qui désigne dans le domaine sportif les
             athlètes
             qui ne se dopent pas. En cela, il correspond à la vision qui nous anime et que nous souhaitons défendre à
             travers ce
-            projet : celle d’un un art de vivre à la fois paisible et exigeant.
+            projet : celle d’un un art de vivre à la fois paisible et exigeant. 
 
             Chez Pause Natty nous incitons les gens à manger correctement et faire du sport afin de se sculpter un physique
             agréable. L’obésité est en constante augmentation dans notre pays depuis 25 ans, un fléau qui menace autant nos
@@ -22,7 +22,7 @@
             Natty entend bien célébrer.
 
         </p>
-    </div>
+    </v-container>
 </template>
 
 <script>
@@ -31,4 +31,6 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+
+</style>
