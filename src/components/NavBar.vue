@@ -1,8 +1,8 @@
 <template>
     <nav class="elevation-12 d-none d-md-flex">
         <img src="../assets/logo-pause-natty.webp" alt="">
-        <a href="#section-concept">Notre concept</a>
-        <a href="#section-valeurs">Nos valeurs</a>
+        <a href="#section-concept">Concept</a>
+        <a href="#section-valeurs">Valeurs</a>
         <a href="#section-calories">Compteur de calories</a>
     </nav>
 </template>

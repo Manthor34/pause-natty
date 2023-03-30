@@ -1,5 +1,5 @@
 <template>
-<v-container id="section-concept" class="d-flex flex-column align-center text-center" fluid>
+<v-container id="section-concept" class="d-flex flex-column align-center text-center mt-8" fluid>
     <h3 class="text-h2 my-8 text-primary">COMPTEUR DE CALORIES</h3>
     <p class="text-h6 my-8 px-12">Lorsque l’on souhaite perdre de la graisse ou construire du muscle, la première étape consiste à évaluer notre dépense énergétique, c'est-à-dire la quantité d’énergie que dépense notre corps au cours de la journée. Celle-ci dépend de notre âge, notre poids, notre sexe et bien évidemment de notre niveau d’activité physique. 
 
@@ -7,7 +7,7 @@
     </p>
 </v-container>
 
-<v-container class=" d-flex flex-column align-center ">
+<v-container class=" d-flex flex-column align-center mb-12">
     <v-form class="form mt-8">
         <v-select 
             color="primary"
