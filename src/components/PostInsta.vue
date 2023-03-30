@@ -1,27 +1,33 @@
 <template>
-    <div>
-        <h3>SUIVEZ-NOUS</h3>
+    <h3 class="text-h2 my-8 text-primary text-center mt-12">POST INSTA</h3>
 
-        <h2>Derniers posts Instagram de {{ nomCompte }}</h2>
-        <div v-for="post in derniersPosts" :key="post.id">
-            <img :src="post.imageUrl" alt="post">
-            <p>{{ post.caption }}</p>
-            <p>{{ post.date }}</p>
-        </div>
-    </div>
+    <v-container class="bg-secondary mb-8" v-if="posts.length">
+        <v-row no-gutters>
+            <v-col v-for="post in posts" :key="post.url" cols="12" sm="4">
+                <v-sheet class="ma-2 pa-2">
+                    <a class="ma-2 pa-2" :href="post.redirect" target="_blank">
+                        <v-card :text="post.like"></v-card>
+                        <v-img aspect-ratio="16/9" cover :src="post.url" alt="url post"></v-img>
+                    </a>
+                </v-sheet>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
   
 <script>
+import usePostInsta from "@/composables/usePostInsta"
 
 export default {
-    data() {
+    setup() {
+        const { posts, fetchPosts } = usePostInsta()
+        fetchPosts()
         return {
-            nomCompte: 'pausenatty',
-            derniersPosts: []
+            posts,
+            fetchPosts,
         }
     },
-
-}
+};
 </script>
 
 <style></style>

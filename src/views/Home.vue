@@ -14,15 +14,9 @@
         </div>
 
         <!-- Deux v-if pour ne pas afficher les post et/ou avis si api ou db en panne  -->
-
-        <div class="bloc-insta" v-if="postInsta">
-            <PostInsta :post="postInsta" />
-        </div>
+        <PostInsta />
 
         <AvisGoogle />
-        <div class="bloc-avis" v-if="avisGoogle">
-            <AvisGoogle :post="avisGoogle" />
-        </div>
 
         <div class="bloc-valeurs">
             <Valeurs />
