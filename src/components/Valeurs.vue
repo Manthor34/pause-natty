@@ -1,7 +1,7 @@
 <template>
-    <v-container id="section-valeurs" class="d-flex flex-column align-center text-center my-12" fluid>
-        <h3 class="text-h2 my-8 text-primary">VALEURS</h3>
-        <p class="text-h6 my-8 px-12">
+    <v-container id="section-valeurs" class="d-flex flex-column align-center text-center my-12 containerValeurs" fluid>
+        <h3 class="text-h2 my-8 text-primary font-family alkatra">VALEURS</h3>
+        <p class="text-h5 my-8 px-12 alkatra">
             Natty est un terme anglais qui signifie “naturel” et “élégant”, et qui désigne dans le domaine sportif les
             athlètes
             qui ne se dopent pas. En cela, il correspond à la vision qui nous anime et que nous souhaitons défendre à
@@ -32,5 +32,11 @@ export default {
 </script>
 
 <style>
-
+.alkatra{
+    font-family: 'Alkatra', cursive !important;
+}
+    .containerValeurs{
+        border-bottom: 2px solid grey;
+        width: 90%;
+    }
 </style>

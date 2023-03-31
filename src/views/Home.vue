@@ -120,5 +120,7 @@ export default {
 .parallax{
     z-index: -10;
 }
-
+    .alkatra{
+        font-family: 'Alkatra', cursive !important;
+    }
 </style>

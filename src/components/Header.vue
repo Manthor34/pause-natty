@@ -2,7 +2,7 @@
 
     <div class="container" fluid>
 
-        <v-parallax src="../assets/natty2.webp" class="parallax d-flex align-center justify-center">
+        <v-parallax src="../assets/natty7.webp" class="parallax d-flex align-center justify-center">
             <div class="d-flex flex-column align-center text rounded">
                 <h1 class="text-primary text-h2 text-sm-h1 font-weight-bold my-8">Mangez en Conscience</h1>
                 <p class="text-white text-h4 my-8">Notre buffet libre-service est organisé en fonction des macro-nutriments contenus dans les ingrédients,

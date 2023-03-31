@@ -1,7 +1,7 @@
 <template>
-<v-container id="section-concept" class="d-flex flex-column align-center text-center mt-8" fluid>
-    <h3 class="text-h2 my-8 text-primary">COMPTEUR DE CALORIES</h3>
-    <p class="text-h6 my-8 px-12">Lorsque l’on souhaite perdre de la graisse ou construire du muscle, la première étape consiste à évaluer notre dépense énergétique, c'est-à-dire la quantité d’énergie que dépense notre corps au cours de la journée. Celle-ci dépend de notre âge, notre poids, notre sexe et bien évidemment de notre niveau d’activité physique. 
+<v-container id="section-calories" class="d-flex flex-column align-center text-center mt-8 textForm" fluid>
+    <h3 class="text-h2 my-8 text-primary alkatra">COMPTEUR DE CALORIES</h3>
+    <p class="text-h5 my-8 px-12 alkatra">Lorsque l’on souhaite perdre de la graisse ou construire du muscle, la première étape consiste à évaluer notre dépense énergétique, c'est-à-dire la quantité d’énergie que dépense notre corps au cours de la journée. Celle-ci dépend de notre âge, notre poids, notre sexe et bien évidemment de notre niveau d’activité physique. 
 
         Renseignez le formulaire ci-dessous pour connaître votre dépense énergétique, nous vous expliquerons ensuite comment utiliser cette information.
     </p>
@@ -22,7 +22,6 @@
             variant="underlined"
             required
         ></v-select>
-
         <v-text-field 
             color="primary"
             v-model="age"
@@ -77,12 +76,13 @@
         <v-select
         color="primary"
         v-model="metabolisme"
-        label="Métabolisme"
+        label="Métabolisme (optionnel)"
         item-title="title"
         item-value="value" 
         :items="[
         {value: 'fast', title: 'Métabolisme qui brûle rapidement (plutôt maigre et sec)'},
-        {value: 'slow', title: 'Métabolisme plus lent (prise de poids plus facile)'}
+        {value: 'slow', title: 'Métabolisme plus lent (prise de poids plus facile)'},
+        {value: 'null', title: 'Métabolisme normal'}
         ]"
         variant="underlined"
         ></v-select>
@@ -154,8 +154,13 @@ export default {
 </script>
 
 <style>
+.alkatra{
+    font-family: 'Alkatra', cursive !important;
+}
 .form{
     width: 80%;
 }
-
+.textForm{
+    width: 90%;
+}
 </style>

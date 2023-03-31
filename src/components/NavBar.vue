@@ -1,9 +1,11 @@
 <template>
-    <nav class="elevation-12 d-none d-md-flex">
+    <nav class="elevation-12 d-none d-md-flex justify-center align-center justify-space-between px-12 py-2">
         <img src="../assets/logo-pause-natty.webp" alt="">
-        <a href="#section-concept">Concept</a>
-        <a href="#section-valeurs">Valeurs</a>
-        <a href="#section-calories">Compteur de calories</a>
+        <div class="px-12">
+            <v-btn variant="plain" class="text-h5 mx-12" href="#section-concept">Concept</v-btn>
+            <v-btn variant="plain" class="text-h5 mx-12" href="#section-valeurs">Valeurs</v-btn>
+            <v-btn variant="plain" class="text-h5 mx-12" href="#section-calories">Compteur de calories</v-btn>
+        </div>
     </nav>
 </template>
 
@@ -14,37 +16,6 @@ export default {
 </script>
 
 <style>
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 10%;
-    align-items: center;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 30px;
-    margin-right: 20px;
-    padding: 5px 10px;
-    transition: all 0.2s ease-in-out;
-}
-
-nav a:hover {
-    color: #000;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-nav a:not(:hover) {
-    opacity: 0.5;
-}
-
 nav img {
     width: 128px;
 }

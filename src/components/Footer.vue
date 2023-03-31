@@ -1,16 +1,13 @@
 <template>
-  <footer class="bg-secondary">
+  <footer class="bg-secondary d-flex flex-column align-center py-6">
 
     <div class="footer-menu">
-      <router-link :to="{ name: 'Menu' }">Menu</router-link>
-      <router-link :to="{ name: 'Contact' }">Contact</router-link>
-      <router-link :to="{ name: 'CGV' }">CGV</router-link>
-      <router-link :to="{ name: 'Mentions légales' }">Mentions légales</router-link>
+      <v-btn variant="plain" size="large" :to="{ name: 'Menu' }">Menu</v-btn>
+      <v-btn variant="plain" size="large" :to="{ name: 'Contact' }">Contact</v-btn>
+      <v-btn variant="plain" size="large" :to="{ name: 'CGV' }">CGV</v-btn>
+      <v-btn variant="plain" size="large" :to="{ name: 'Mentions légales' }">Mentions légales</v-btn>
     </div>
-    <div class="footer-separator"></div>
-    <div class="footer-links">
-      <a href="https://www.instagram.com/pausenatty/"><v-icon icon="mdi-instagram"></v-icon></a>
-    </div>
+      <v-btn variant="plain" size="large" href="https://www.instagram.com/pausenatty/"><v-icon icon="mdi-instagram"></v-icon></v-btn>
   </footer>
 </template>
 
@@ -21,46 +18,7 @@ export default {
 </script>
 
 <style>
-footer {
-  background-color: #f8f8f8;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-footer div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-}
-
-footer div a {
-  margin: 10px;
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s ease;
-}
-
-.footer-links {
-  display: flex;
-}
-
-footer img {
-  height: 56px;
-}
-
-footer div a:hover {
-  color: #777;
-}
-
-.footer-separator {
-  border-top: 1px solid black;
-  width: 300px;
-  margin: 0 20px;
+.footer-menu{
+  border-bottom: 1px solid #a8ddd9;
 }
 </style>
