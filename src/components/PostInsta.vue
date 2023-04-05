@@ -38,7 +38,7 @@ export default {
     font-family: 'Alkatra', cursive !important;
 }
 .button{
-    width: 10%;
+    width: 200px;
     text-align: center;
 }
 </style>

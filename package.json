@@ -10,12 +10,16 @@
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
+    "@vueuse/motion": "^2.0.0-beta.12",
+    "animate.css": "^4.1.1",
     "core-js": "^3.8.3",
     "pinia": "^2.0.23",
     "roboto-fontface": "*",
     "swiper": "^9.2.0",
     "vue": "^3.2.13",
+    "vue-animate-onscroll": "^1.0.8",
     "vue-router": "^4.0.0",
+    "vue3-animate-onscroll": "^1.0.6",
     "vuetify": "^3.0.0",
     "webfontloader": "^1.0.0"
   },

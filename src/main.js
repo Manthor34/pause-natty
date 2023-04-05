@@ -13,8 +13,12 @@ import { createApp } from 'vue'
 // Plugins
 import { registerPlugins } from '@/plugins'
 
+import { MotionPlugin } from '@vueuse/motion'
+
 const app = createApp(App)
 
 registerPlugins(app)
+
+app.use(MotionPlugin)
 
 app.mount('#app')
