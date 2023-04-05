@@ -2,7 +2,7 @@
 <v-container class="d-flex flex-row align-center text-center">
         <v-container id="section-calories" class="d-flex flex-column align-center text-center" fluid>
             <h3 class="text-h2 my-8 text-primary alkatra">COMPTEUR DE CALORIES</h3>
-            <p class="text-h6 my-8 px-12 alkatra">Lorsque l’on souhaite perdre de la graisse ou construire du muscle, la première
+            <p class="text-h5 my-8 px-12 alkatra">Lorsque l’on souhaite perdre de la graisse ou construire du muscle, la première
                 étape
                 consiste à évaluer notre dépense énergétique, c'est-à-dire la quantité d’énergie que dépense notre corps au
                 cours de la journée. Celle-ci dépend de notre âge, notre poids, notre sexe et bien évidemment de notre
@@ -50,7 +50,7 @@
                     Calculer
                 </v-btn>
 
-                <h2 class="mt-6 text-h2" v-if="submitted">{{ result }} ! C’est le nombre de calories que brûle votre corps
+                <h2 class="mt-6 text-h4 alkatra" v-if="submitted"><span class="text-h3 alkatra">{{ result }} !</span> C’est le nombre de calories que brûle votre corps
                     quotidiennement. Si vous souhaitez perdre de la graisse il vous faudra en consommer un petit peu moins,
                     et
                     si vous souhaitez vous muscler il vous faudra en consommer un peu plus.
